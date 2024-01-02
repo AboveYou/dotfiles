@@ -1,13 +1,14 @@
 # NeoVim
 
-The config needs to be places in `/home/basti/.config/nvim/init.vim`.  
+The config needs to be placed in `~/.config/nvim/init.vim`.  
 
-For plugin install I use `vim-plug`, which should be installed automatically while loading the config.  
+For plugin installation I use `vim-plug`, which should be installed automatically while loading the config.  
 
-The only dependency for the plugins is NERDFonts, see how to install it[here](https://github.com/ryanoasis/nerd-fonts).  
+The only dependency for the plugins is NERDFonts, see how to install them [here](https://github.com/ryanoasis/nerd-fonts).  
 
 ### Shortcuts
-A few (custom) shortcuts I use are:  
+The few (custom) shortcuts I use are:  
+
 `C-f` - toggle NERDTree  
 `++` - toggle NERDCommenter (visual and plain)  
 `C-ww` - switch to next split  
