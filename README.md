@@ -3,6 +3,11 @@
 Some configs I like to use for my Linux machines.
 
 There are configs for:  
-- [nvim](nvim/nvim.md)  
+- [VS Code](code/)  
+- [gdb (gef)](gdb/gdb.md)  
+- [git](git/)  
+- [GNOME](gnome/gnome.md)  
+- [NeoVim](nvim/nvim.md)  
 - [zsh](zsh/zsh.md)  
-- [gdb/gef](gdb/gdb.md)  
+
+> the scripts have been written for the dnf package manager
