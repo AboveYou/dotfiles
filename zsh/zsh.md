@@ -8,6 +8,7 @@ I use `oh-my-zsh` as my plugin manager, for installation [see](https://ohmyz.sh/
 Check the plugin list for the packages, which need to be installed.  
 
 **package manager**:
+- zsh
 - z
 - git
 - tmux
