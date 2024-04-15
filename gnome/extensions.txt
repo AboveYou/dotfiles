@@ -1,0 +1,9 @@
+16/auto-move-windows/
+307/dash-to-dock/
+4980/disable-workspace-switcher/
+6406/fedora-linux-update-indicator/
+600/launch-new-instance/
+4099/no-overview/
+6394/simple-workspaces-bar/
+2890/tray-icons-reloaded/
+1460/vitals/

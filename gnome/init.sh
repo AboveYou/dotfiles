@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo -e "[!] setting workspace shortcuts"
 # Set workspace number to static 10
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
@@ -25,3 +26,21 @@ done
 # 10th workspace is a bit different
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Super>0']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
+
+echo -e "\n[!] installing extensions"
+
+# install GNOME shell extensions
+INSTALLER="$(dirname $0)/extension-installer.sh"
+EXTENSIONS="$(dirname $0)/extensions.txt"
+
+# Read each line of extensions.txt
+while IFS= read -r line; do
+    # Extract the number before the first /
+    extension_number=$(echo "$line" | cut -d'/' -f1)
+    
+    # Call install-extensions with the extracted number
+    bash $INSTALLER "$extension_number"
+done < $EXTENSIONS
+
+# this is not available on wayland
+# bash $INSTALLER --restart-shell
